@@ -1,6 +1,6 @@
 # Inventory Item Management App  
 
-[![Demo Video]](demo.mkv) *Click the link to watch the demo video!*
+[![Demo Video](demo.png)](demo.mkv) *Click the link to watch the demo video!*
 
 ## Features
 - Add, search, and remove inventory items.
