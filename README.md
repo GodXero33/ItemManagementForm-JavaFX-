@@ -1,11 +1,11 @@
-# Inventory Item Management App  
+# Inventory Management App  
 
-[![Demo Video](demo.png)](demo.mkv) *Click the link to watch the demo video!*
+[Click to download demo video](demo.mkv)  
 
-## Features
-- Add, search, and remove inventory items.
-- View all items in a table with real-time updates.
+## Features  
+- Add, search, and remove inventory items.  
+- View all items in a table with real-time updates.  
 
-## Technologies Used
-- Java
-- JavaFX
+## Technologies Used  
+- Java  
+- JavaFX  
