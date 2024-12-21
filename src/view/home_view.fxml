@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.HomeViewController">
+   <children>
+      <TabPane layoutY="72.0" prefHeight="553.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Add Item">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="515.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="addItemIDLabel" alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="53.0" prefWidth="418.0" text="Item#1">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="276.0" prefHeight="132.0" prefWidth="147.0" text="Description">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="14.0" prefHeight="53.0" prefWidth="147.0" text="ID">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="77.0" prefHeight="53.0" prefWidth="147.0" text="Name">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="141.0" prefHeight="53.0" prefWidth="147.0" text="Quantity">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="208.0" prefHeight="53.0" prefWidth="147.0" text="Price">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addItemNameTextField" layoutX="174.0" layoutY="77.0" prefHeight="52.0" prefWidth="417.0" promptText="Item Name">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="addItemQuantityTextField" layoutX="174.0" layoutY="142.0" prefHeight="52.0" prefWidth="417.0" promptText="Item Quantity">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="addItemPriceTextField" layoutX="174.0" layoutY="209.0" prefHeight="52.0" prefWidth="417.0" promptText="Item Price">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </TextField>
+                        <TextArea fx:id="addItemDescriptionTextField" layoutX="174.0" layoutY="270.0" prefHeight="138.0" prefWidth="417.0" promptText="Item Description">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </TextArea>
+                        <Button layoutX="415.0" layoutY="449.0" mnemonicParsing="false" onAction="#addItemAddButtonOnAction" onMouseEntered="#addItemAddButtonOnMouseEntered" onMouseExited="#addItemAddButtonOnMouseExited" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: #ddd;" text="Add">
+                           <font>
+                              <Font name="Agency FB Bold" size="29.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Remove Item">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="515.0" prefWidth="600.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="14.0" prefHeight="53.0" prefWidth="147.0" text="ID">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="77.0" prefHeight="53.0" prefWidth="147.0" text="Name">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="141.0" prefHeight="53.0" prefWidth="147.0" text="Quantity">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="208.0" prefHeight="53.0" prefWidth="147.0" text="Price">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="removeItemRemoveButton" disable="true" layoutX="415.0" layoutY="449.0" mnemonicParsing="false" onAction="#removeItemRemoveButtonOnAction" onMouseEntered="#removeItemRemoveButtonOnMouseEntered" onMouseExited="#removeItemRemoveButtonOnMouseExited" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: #ddd;" text="Remove">
+                           <font>
+                              <Font name="Agency FB Bold" size="29.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="229.0" layoutY="449.0" mnemonicParsing="false" onAction="#removeItemSearchButtonOnAction" onMouseEntered="#removeItemSearchButtonOnMouseEntered" onMouseExited="#removeItemSearchButtonOnMouseExited" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: #ddd;" text="Search">
+                           <font>
+                              <Font name="Agency FB Bold" size="29.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label fx:id="removeItemNameLabel" layoutX="174.0" layoutY="77.0" prefHeight="53.0" prefWidth="418.0" text="-">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="removeItemIDTextField" layoutX="174.0" layoutY="15.0" onKeyReleased="#removeItemIDTextFieldOnKeyReleased" prefHeight="52.0" prefWidth="417.0" promptText="Item ID" text="Item#">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="removeItemQuantityLabel" layoutX="174.0" layoutY="141.0" prefHeight="53.0" prefWidth="418.0" text="-">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="removeItemPriceLabel" layoutX="174.0" layoutY="208.0" prefHeight="53.0" prefWidth="418.0" text="-">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="271.0" prefHeight="53.0" prefWidth="147.0" text="Description">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="removeItemDescriptionLabel" layoutX="174.0" layoutY="271.0" prefHeight="53.0" prefWidth="418.0" text="-">
+                           <font>
+                              <Font name="Agency FB Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="View Items">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="415.0" layoutY="449.0" mnemonicParsing="false" onAction="#viewItemsRefreshButtonOnAction" onMouseEntered="#viewItemsRefreshButtonOnMouseEntered" onMouseExited="#viewItemsRefreshButtonOnMouseExited" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: #ddd;" text="Refresh">
+                           <font>
+                              <Font name="Agency FB Bold" size="29.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TableView fx:id="viewItemsTable" layoutX="8.0" layoutY="8.0" prefHeight="435.0" prefWidth="585.0">
+                          <columns>
+                            <TableColumn fx:id="viewItemsIDColumn" prefWidth="59.0" text="ID" />
+                            <TableColumn fx:id="viewItemsNameColumn" prefWidth="120.0" text="Name" />
+                              <TableColumn fx:id="viewItemsQuantityColumn" prefWidth="76.0" text="Quantity" />
+                              <TableColumn fx:id="viewItemsPriceColumn" prefWidth="172.0" text="Price" />
+                              <TableColumn fx:id="viewItemsDescriptionColumn" prefWidth="157.0" text="Description" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" prefHeight="73.0" prefWidth="600.0" text="Item Management Form">
+         <font>
+            <Font name="Agency FB Bold" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
